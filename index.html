@@ -36,11 +36,12 @@
   </head>
   <!-- #endregion head -->
 
+
+
+
   <body>
 
-    
-</svg>
-
+  
     <!-- #region header -->
     <header class="page-header">
       <!-- #region Navigation-->
@@ -50,7 +51,7 @@
             >Web<span class="span-logo-nav">Studio</span></a
           >
           <ul class="navi-list">
-            <li><a class="link" href="./index.html">Studio</a></li>
+            <li><a class="link link-studio" href="./index.html">Studio</a></li>
             <li><a class="link" href="">Portfolio</a></li>
             <li><a class="link" href="">Contacts</a></li>
           </ul>
@@ -93,7 +94,11 @@
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="cont-section-two">
             <li class="list-gap">
-              <img src="./images/icons/icon1.svg" alt="" />
+              <div class="icon-wrapper">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="section-h-three">Strategy</h3>
               <p class="section-p">
                 Our goal is to identify the business problem to walk away with
@@ -101,7 +106,11 @@
               </p>
             </li>
             <li class="list-gap">
-              <img src="./images/icons/icon2.svg" alt="" />
+              <div class="icon-wrapper">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="section-h-three">Punctuality</h3>
               <p class="section-p">
                 Bring the key message to the brand's audience for the best price
@@ -109,7 +118,11 @@
               </p>
             </li>
             <li class="list-gap">
-              <img src="./images/icons/icon3.svg" alt="" />
+              <div class="icon-wrapper">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="section-h-three">Diligence</h3>
               <p class="section-p">
                 Research and confirm brands with the strongest digital growth
@@ -117,7 +130,11 @@
               </p>
             </li>
             <li class="list-gap">
-              <img src="./images/icons/icon4.svg" alt="" />
+              <div class="icon-wrapper">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="section-h-three">Technologies</h3>
               <p class="section-p">
                 Design practice focused on digital experiences. We bring forth a
@@ -170,8 +187,23 @@
               <div class="div-section">
                 <h3 class="section-h-three">Camila Garcia</h3>
                 <p class="section-p">Marketing</p>
+                <ul class="ul-icons">
+              <li><svg width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></li>
+              <li class="anderimg"><a class="anderimg" href=""></a><svg width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></li>
+              <li><svg width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></li>
+              <li><svg width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></li>
+            </ul>
               </div>
             </li>
+            
             <li class="section-three-li">
               <img
                 src="./images/img.jpg"
@@ -195,18 +227,21 @@
         <div class="container">
           <h2 class="section-four-title">Our Portfolio</h2>
           <ul class="ul-portfolio">
-            <li class="li-four">
-              <img
-                src="./images/portfolio/img-5.jpg"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
-              <div class="div-portfol">
-                <h3 class="section-h-three">Banking App</h3>
-                <p class="section-p">App</p>
-              </div>
-            </li>
+            
+              <li class="li-four">
+                
+                <img
+                  src="./images/portfolio/img-5.jpg"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+                <div class="div-portfol">
+                  <h3 class="section-h-three">Banking App</h3>
+                  <p class="section-p">App</p>
+                </div>
+              </li>
+            
 
             <li class="li-four">
               <img
@@ -247,7 +282,7 @@
               </div>
             </li>
 
-            <li class="li-four">
+            <li class="li-four li-margin">
               <img
                 src="./images/portfolio/img-1.jpg"
                 alt="mobile screen"
@@ -260,18 +295,20 @@
               </div>
             </li>
 
-            <li class="li-four">
-              <img
-                src="./images/portfolio/img.jpg"
-                alt="the girl laughs"
-                width="360"
-                height="300"
-              />
-              <div class="div-portfol">
-                <h3 class="section-h-three">Online Courses</h3>
-                <p class="section-p">Marketing</p>
-              </div>
-            </li>
+            
+              <li class="li-four">
+                <img
+                  src="./images/portfolio/img.jpg"
+                  alt="the girl laughs"
+                  width="360"
+                  height="300"
+                /><div class="box">
+                <div class="div-portfol overlay">
+                  <h3 class="section-h-three">Online Courses</h3>
+                  <p class="section-p">Marketing<code>div.box</code></p>
+                </div></div>
+              </li>
+            
           </ul>
         </div>
       </section>
@@ -290,7 +327,12 @@
           digital marketing & growth solutions.
         </p>
       </div>
+     
     </footer>
     <!-- #endregion footer-->
+      
+     
+  
+</svg>
   </body>
 </html>
