@@ -353,6 +353,9 @@ button {
   align-items: center;
   gap: 24px;
 }
+.icons-gap-footer {
+  gap: 16px;
+}
 .icons-box {
   align-items: center;
   justify-content: center;
