@@ -374,7 +374,7 @@ button {
   border-radius: 50%;
   text-decoration: none;
   margin: 5px;
-  transition: background 0.3s;
+
   background-color: #4d5ae5;
 }
 
@@ -516,7 +516,6 @@ button {
 }
 .icons {
   display: flex;
-  gap: 16px;
 }
 .icon-class-footer {
   width: 40px;
