@@ -316,19 +316,38 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.ul-icons {
-  width: 264px;
-  height: 40px;
+.icons {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
+  width: 232px;
+}
+.icons-box {
+  align-items: center;
   justify-content: center;
 }
-.anderimg {
-  background-size: cover;
-  background-image: url(../images/elipse.png);
+.icons-logo {
+  display: flex;
+  fill: #fff;
 }
-*/
+.icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 5px;
+  transition: background 0.3s;
+  background-color: #4d5ae5;
+}
+
+.icons a:hover {
+  background: #404bbf;
+}
 
 /* #endregion SECTION3
 
@@ -372,24 +391,32 @@ button {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.portfolio-cover-text {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  transform: translateX(-100%);
-  transition: transform 250ms ease-in-out;
-}
-.box:hover .overlay {
-  transform: translatey(0);
-}
-.overlay p {
-  color: #fff;
   padding: 10px;
   margin: 0;
-  font-size: 18px;
+
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #4d5ae5;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+.box:hover .portfolio-cover-text {
+  transform: translatey(0);
 }
 
 .overlay code {
@@ -420,5 +447,36 @@ button {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+  margin-left: 156px;
+}
+.footer-content {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.div-links-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.icons-footer {
+  width: 24px;
+  height: 24px;
+}
+
+.icons .a-hover-footer:hover {
+  background-color: #31d0aa;
 }
 /* #endregion FOOTER*/
