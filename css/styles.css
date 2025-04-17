@@ -59,6 +59,9 @@ button {
 /* #region HEADer */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .header-container {
@@ -113,19 +116,27 @@ button {
   cursor: pointer;
   position: relative;
 }
+.link-studio::after {
+  color: #404bbf;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+}
 .link-studio:hover::after {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #007bff; /* синій */
-  transition: width 0.3s ease;
-  content: "";
-}
-.link-studio:hover::after {
   width: 100%;
 }
+.link-portfolio {
+  color: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link-address {
   display: block;
   padding: 24px 0;
@@ -186,15 +197,18 @@ button {
   column-gap: 48px;
 }
 .section-one {
+  background-repeat: no-repeat;
+  max-width: 1440px;
   padding: 188px 0;
   background-color: #2e2f42;
   background-image: linear-gradient(
       to bottom,
-      rgba(46, 47, 66, 0.5),
-      rgba(46, 47, 66, 0.5)
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
   background-size: cover;
+  background-position: center;
 }
 .section-h-one {
   max-width: 496px;
@@ -223,6 +237,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.64px;
   text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background-color: #404bbf;
@@ -273,6 +288,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 8px;
 }
 
 /* #endregion SECTION2*/
@@ -316,27 +332,35 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+.a-class {
+  width: 100%;
+  height: 100%;
+}
+.icon-class {
+}
 .icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  width: 232px;
 }
 .icons-box {
   align-items: center;
   justify-content: center;
+  fill: #f4f4fd;
 }
 .icons-logo {
   display: flex;
   fill: #fff;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons a {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
+
   width: 40px;
   height: 40px;
+  display: flex;
 
   border-radius: 50%;
   text-decoration: none;
@@ -346,7 +370,7 @@ button {
 }
 
 .icons a:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* #endregion SECTION3
@@ -361,12 +385,17 @@ button {
   width: calc((100% - 48px) / 3);
   width: 360px;
   height: 420px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li-four:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  
+}
+.li-four p:hover{
+   transform: translateY(0%);
 }
 .li-margin {
   margin-bottom: 120px;
@@ -457,7 +486,7 @@ button {
 .footer-content {
   display: flex;
   justify-items: center;
-  align-items: center;
+  align-items: baseline;
 }
 .div-links-footer {
   display: flex;
@@ -471,12 +500,38 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
 }
+.icons{
+  display: flex; 
+  gap: 16px;
+}
+.icon-class-footer{
+  width: 40px; 
+   height: 40px; 
+  
+
+}
 .icons-footer {
   width: 24px;
   height: 24px;
+   fill: #f4f4fd;
 }
 
-.icons .a-hover-footer:hover {
+/* .icons .a-hover-footer:hover {
   background-color: #31d0aa;
+} */
+.a-hover-footer{
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons .a-hover-footer:hover{
+background-color: #31d0aa;
+}
+.a-hover-footer:focus{
+  background-color: #31d0aa; 
 }
 /* #endregion FOOTER*/
